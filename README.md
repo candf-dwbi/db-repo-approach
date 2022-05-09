@@ -64,7 +64,7 @@ scripts/                                                         #all DB scripts
    2. pre-prod
    3. prod
 4. Data Flow Approach:
-   source_file -> pipe -> Stage Table -> Stream -> Task -> Fact Table -> View
+   source_file (file_format and Stage) -> pipe -> Stage Table -> Stream -> Task -> Fact Table -> View
    snowflakedb -> 
    - snowflakedb is snowflake_sample_data.tpch_sf1 database
    - source_file will be added as part of the next tasks
