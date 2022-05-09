@@ -43,6 +43,13 @@ scripts/                                                         #all DB scripts
    - **__** - delimiter between type of the file - repetable and the object or description of the file
    - **run_always_metadata_updates.sql** - description of the file 
 
+
+# Prerequisits
+- Snowflake account - snowflake.com
+  - create schema
+  - create objects
+  - access to snowflake_sample_data.tpch_sf1
+
 # Snoflake objects apprach described here with some specific to the project:
 1. There are 3 envs:
    1. development
@@ -58,3 +65,6 @@ scripts/                                                         #all DB scripts
    3. prod
 4. Data Flow Approach:
    source_file -> pipe -> Stage Table -> Stream -> Task -> Fact Table -> View
+   snowflakedb -> 
+   - snowflakedb is snowflake_sample_data.tpch_sf1 database
+   - source_file will be added as part of the next tasks
